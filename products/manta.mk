@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Include custom telephony configuration
-include vendor/custom/configs/custom_tablet.mk
+# Include pure telephony configuration
+include vendor/pure/configs/pure_tablet.mk
 
 # Inherit AOSP device configuration for angler
 $(call inherit-product, device/samsung/manta/aosp_manta.mk)
