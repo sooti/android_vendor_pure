@@ -30,3 +30,6 @@ PRODUCT_PACKAGES += \
     Busybox \
     Masquerade \
     OmniStyle
+
+# Inherit prebuilt launcher on all builds
+$(call inherit-product-if-exists, vendor/prebuilt/prebuilt.mk)

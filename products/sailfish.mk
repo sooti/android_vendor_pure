@@ -18,8 +18,8 @@ include vendor/pure/configs/pure_phone.mk
 # Inherit AOSP device configuration for sailfish
 $(call inherit-product, device/google/marlin/aosp_sailfish.mk)
 
-# Inherit pixel gapps
-$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
+#inline gapps
+$(call inherit-product-if-exists, vendor/gapps/gapps.mk)
 
 # Override AOSP build properties
 PRODUCT_NAME := sailfish
