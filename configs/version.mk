@@ -14,7 +14,11 @@
 
 #PureNexus versioning
 ifndef PURE_BUILD_TYPE
+  ifeq ($(shell hostname),BuildMachine-Z170S)
+    PURE_BUILD_TYPE := TEST
+  else
     PURE_BUILD_TYPE := UNOFFICIAL
+  endif
 endif
 
 PURE_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)-$(PURE_BUILD_TYPE)
