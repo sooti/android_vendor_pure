@@ -28,7 +28,7 @@ PRODUCT_PACKAGES += \
 # Custom Packages
 PRODUCT_PACKAGES += \
     Busybox \
-    Masquerade \
+    ThemeInterfacer \
     OmniStyle
 
 # Inherit prebuilt launcher on all builds
